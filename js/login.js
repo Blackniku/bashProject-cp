@@ -29,6 +29,8 @@ submit.addEventListener("click", () => {
         fail.innerHTML = "password incorrect"
         user.value = ''
         password.value = ''
+    } else if (password.value == '1' && login.password == '1'){
+        alert("ata")
     }
 })
 // limpar as mensagens de erro caso o usuario acerte kkkk
