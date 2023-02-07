@@ -30,7 +30,8 @@ submit.addEventListener("click", () => {
         user.value = ''
         password.value = ''
     } else if (password.value == '1' && login.password == '1'){
-        alert("ata")
+        alert("Logou!!")
+       
     }
 })
 // limpar as mensagens de erro caso o usuario acerte kkkk
