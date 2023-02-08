@@ -169,3 +169,20 @@ form
   border-radius: 8px;
   background: #fff;
 }
+.login-success{
+  display: none;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 20px;
+  border-width: 1vh;
+  color: rgb(9, 236, 9);
+  font-family: monospace;
+  border-right: 4px solid;
+  border-left: 4px solid;
+  padding: 5px 100px;
+}
+
+
+
+
+

@@ -20,20 +20,29 @@ const login = {
 
 submit.addEventListener("click", () => {
     if (user.value == login.user && password.value == login.password) {
-        window.location.replace("mainPage.html")
-    } else if (user.value != login.user) {
+       
+        document.querySelector(".login-success").style.display = "block"
+        document.querySelector(".login-success").innerHTML = "Login bem sucedido";
+       
+    }else if (user.value == "" && password.value == ""){
+        document.querySelector(".login-success").innerHTML = "";
+        document.querySelector(".login-success").style.display = "none";
+    }
+    else if (user.value != login.user) {
         fail.innerHTML = "user incorrect"
         user.value = ''
         password.value = ''
+        document.querySelector(".login-success").innerHTML = "";
+        document.querySelector(".login-success").style.display = "none";
     } if (password.value != login.password) {
         fail.innerHTML = "password incorrect"
         user.value = ''
         password.value = ''
-    } else if (password.value == '1' && login.password == '1'){
-        alert("Logou!!")
-       
-    }
-})
+        document.querySelector(".login-success").innerHTML = "";
+        document.querySelector(".login-success").style.display = "none";
+    }  
+    } 
+)
 // limpar as mensagens de erro caso o usuario acerte kkkk
 submit.addEventListener("click", () => {
     if (user.value == login.user && password.value == login.password) {
@@ -49,3 +58,5 @@ submit.addEventListener("click", () => {
         password.value = '';
     }
 })
+
+
